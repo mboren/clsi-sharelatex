@@ -11,7 +11,7 @@ RUN add-apt-repository ppa:chris-lea/node.js
 RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y nodejs build-essential zlib1g-dev latexmk
-RUN apt-get install -y texlive-latex-recommended texlive-latex-extra
+RUN apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-extra
 
 # Install app dependencies
 COPY package.json /src/package.json
